@@ -125,12 +125,12 @@ def addEmployee():
                        ('', employee_name, employee_password, employee_email, employee_address, employee_mobile))
         db_conn.commit()
         emp_image_file_name_in_s3 = "emp-id-" + str(employee_name) + "_image_file"
-        s3 = boto3.resource('s3',
-                            aws_access_key_id='ASIAU56IROEJTPKIIEXE',
-                            aws_secret_access_key='9wa0cplmvAdaG82JOjMbHVGqvFLpUCgm1yonp+kt')
+        s3 = boto3.resource('s3')
+                            # aws_access_key_id='ASIAU56IROEJTPKIIEXE',
+                            # aws_secret_access_key='9wa0cplmvAdaG82JOjMbHVGqvFLpUCgm1yonp+kt')
 
         try:
-            print("Data inserted in MySQL RDS... uploading image to S3...")
+            # print("Data inserted in MySQL RDS... uploading image to S3...")
             s3.Bucket(custombucket).put_object(Key=emp_image_file_name_in_s3, Body=emp_image_file)
             bucket_location = boto3.client('s3').get_bucket_location(Bucket=custombucket)
             s3_location = (bucket_location['LocationConstraint'])
