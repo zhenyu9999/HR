@@ -5,7 +5,7 @@ import boto3
 from config import *
 
 app = Flask(__name__, template_folder='./templates')
-app.secret_key = '9wa0cplmvAdaG82JOjMbHVGqvFLpUCgm1yonp+kt'
+# app.secret_key = 'super secret key'
 app.config['SESSION_TYPE'] = 'filesystem'
 
 bucket = custombucket
@@ -279,7 +279,7 @@ def login():
         account = cursor.fetchone()
 
         if account:
-            session['logged'] = True
+            # session['logged'] = True
             session['admin_id'] = account[0]
             session['admin_name'] = account[1]
             cursor.close()
