@@ -5,7 +5,7 @@ import boto3
 from config import *
 
 app = Flask(__name__, template_folder='./templates')
-app.secret_key = 'super secret key'
+# app.secret_key = 'super secret key'
 app.config['SESSION_TYPE'] = 'filesystem'
 
 bucket = custombucket
