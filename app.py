@@ -126,6 +126,7 @@ def addEmployee():
         db_conn.commit()
         emp_image_file_name_in_s3 = "emp-id-" + str(employee_name) + "_image_file"
         s3 = boto3.resource('s3',
+                            aws_access_key_id='ASIAU56IROEJTPKIIEXE',
                             aws_secret_access_key='9wa0cplmvAdaG82JOjMbHVGqvFLpUCgm1yonp+kt')
 
         try:
