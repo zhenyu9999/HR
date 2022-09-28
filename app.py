@@ -280,8 +280,8 @@ def login():
 
         if account:
             # session['logged'] = True
-            session['admin_id'] = account[0]
-            session['admin_name'] = account[1]
+            # session['admin_id'] = account[0]
+            # session['admin_name'] = account[1]
             cursor.close()
             return render_template("/dashboard.html")
         else:
