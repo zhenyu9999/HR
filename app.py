@@ -128,8 +128,7 @@ def addEmployee():
         s3 = boto3.resource('s3',
                             aws_access_key_id = "ASIAU56IROEJZ74NATT3",
                             aws_secret_access_key = "FNdBkp1T6c1II/SMxgs9Zde6dCfcR1h5bWcGENhz",
-                            aws_session_token = "FwoGZXIvYXdzELn//////////wEaDK1UsEM85JZfNu1HUiLQAUaRuFzRhFSfml7uyJUnm1RzmeX890BDAH9SQ72bVI68lUGgvuNCH97qA7D88y7MBEnYi2Nx6adqGF6RWg+gTN1u/XkCozAOCG2e7y06e4J9w/T4BLj06yKeWzr/YZuOeIUBddJUk9TRuLda13xtI3Bkhq1orgLf/IgzIIVVbcoIa8KJptSIBKsmf2LVrMiV+h7aZjpERMyeWOk10W80Uuo0XI1WUiX8EJNlkaJGuO6+sMCbq5GT1l5kNMWTRN3YlH1wl61T5TB15DOwLXgwUXeXe8owozcmQYyLUtyX8N5TiCbI7liY1v4eqKdEkQCuSYb8m9MqE1BYEy60xAfaErJExO/ZdvKNA==")
-
+                            aws_session_token = "FwoGZXIvYXdzELn//////////wEaDK1UsEM85JZfNu1HUiLQAUaRuFzRhFSfml7uyJUnm1RzmeX890BDAH9SQ72bVI68lUGgvuNCH97qA7D88y7MBEnYi2Nx6adqGF6RWg+gTN1u/XkCozAOCG2e7y06e4J9w/T4BLj06yKeWzr/YZuOeIUBddJUk9TRuLda13xtI3Bkhq1orgLf/IgzIVVbcoIa8KJptSIBKsmf2LVrMiV+h7aZjpERMyeWOk10W80Uuo0XI1WUiX8EJNlkaJGuO6+sMCbq5GT1l5kNMWTRN3YlH1wl61T5TB15DOwLXgwUXe8owozcmQYyLUtyX8N5TiCbI7liY1v4eqKdEkQCuSYb8m9MqE1BYEy60xAfaErJExO/ZdvKNA==")
         try:
             # print("Data inserted in MySQL RDS... uploading image to S3...")
             s3.Bucket(custombucket).put_object(Key=emp_image_file_name_in_s3, Body=emp_image_file)
