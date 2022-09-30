@@ -128,7 +128,7 @@ def addEmployee():
         s3 = boto3.resource('s3',
                             aws_access_key_id = 'ASIAU56IROEJZ74NATT3',
                             aws_secret_access_key = 'FNdBkp1T6c1II/SMxgs9Zde6dCfcR1h5bWcGENhz',
-                            aws_session_token = 'FwoGZXIvYXdzELn//////////wEaDK1UsEM85JZfNu1HUiLQAUaRuFzRhFSfml7uyJUnm1RzmeX890BDAH9SQ72bVI68lUGgvuNC$')
+                            aws_session_token = 'FwoGZXIvYXdzELn//////////wEaDK1UsEM85JZfNu1HUiLQAUaRuFzRhFSfml7uyJUnm1RzmeX890BDAH9SQ72bVI68lUGgvuNC$GgvuNCH97qA7D88y7MBEnYi2Nx6adqGF6RWg+gTN1u/XkCozAOCG2e7y06e4J9w/T4BLj06yKeWzr/YZuOeIUBddJUk9TRuLda13xtI3Bkhq1orgLf/IgzIIVVbcoIa8KJptSIBKsmf2LVrMiV+h7aZjpERMyeWOk10W80Uuo0XI1WUiX8EJNlkaJGuO6+sMCbq5GT1l5kNMWTRN3YlH1wl61T5TB15DOwLXgwUXe')
 
         try:
             # print("Data inserted in MySQL RDS... uploading image to S3...")
